@@ -1,0 +1,15 @@
+function bmiCalculator(weight, height){
+    var weight = prompt("Enter weight here.");
+    var height = prompt("Enter height here.");
+    bmi =Math.round(weight / Math.pow(height, 2));
+    if(bmi < 18.5){
+        return "your bmi is " + bmi + " so you are underweight";
+    }
+    else if(bmi >= 18.5 && bmi <= 24.9){
+        return "your bmi is " + bmi + " so you are normal weight";
+    }
+    else if(bmi > 24.9){
+        return "your bmi is " + bmi + " so you are overweight";
+    }
+}
+bmiCalculator();
